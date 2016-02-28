@@ -4,6 +4,10 @@
   "description": "Generates a SystemJS config object from an npm package's dependencies.",
   "main": "index.js",
   "author": "Zentrick nv (https://www.zentrick.com/)",
+  "contributors": [
+    "Tim De Pauw <tim.depauw@zentrick.com>",
+    "Laurent De Smet <laurent.desmet@zentrick.com>"
+  ],
   "engines": {
     "node": ">=0.12.0"
   },

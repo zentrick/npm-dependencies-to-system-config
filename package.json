@@ -12,6 +12,9 @@
     "lib/",
     "index.js"
   ],
+  "bin": {
+    "npm-dependencies-to-system-config": "lib/cli.js"
+  },
   "scripts": {
     "clean": "gulp clean",
     "build": "gulp build",

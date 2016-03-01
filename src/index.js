@@ -25,8 +25,7 @@ export default async (pkgRoot, options) => {
     mapPackageDependencies(pkgMeta.dependencies, packages, map)
 
     config.packages[slash(pkgMeta.path)] = {
-      main: pkgMeta.main,
-      format: pkgMeta.format,
+      main: pkgMeta.browser || pkgMeta.main || 'index.js',
       map
     }
   }

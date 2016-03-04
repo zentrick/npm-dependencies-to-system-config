@@ -24,10 +24,18 @@ export default async (pkgRoot, options) => {
 
     mapPackageDependencies(pkgMeta.dependencies, packages, map)
 
-    config.packages[slash(pkgMeta.path)] = {
-      main: pkgMeta.browser || pkgMeta.main || 'index.js',
-      map
+    let main = pkgMeta.main || 'index.js'
+    if (pkgMeta.browser != null) {
+      if (typeof pkgMeta.browser === 'string') {
+        main = pkgMeta.browser
+      } else if (typeof pkgMeta.browser === 'object') {
+        Object.assign(map, pkgMeta.browser)
+      } else {
+        throw new Error(`Unexpected browser field: ${pkgMeta.browser}`)
+      }
     }
+
+    config.packages[slash(pkgMeta.path)] = { main, map }
   }
 
   return config

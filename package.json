@@ -1,6 +1,6 @@
 {
   "name": "npm-dependencies-to-system-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generates a SystemJS config object from an npm package's dependencies.",
   "main": "index.js",
   "author": "Zentrick nv (https://www.zentrick.com/)",

@@ -29,7 +29,8 @@
   "bugs": "https://github.com/zentrick/npm-dependencies-to-system-config/issues",
   "dependencies": {
     "babel-runtime": "^6.5.0",
-    "list-npm-dependencies": "^0.1.0"
+    "list-npm-dependencies": "^0.1.0",
+    "slash": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",

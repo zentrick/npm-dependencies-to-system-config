@@ -39,7 +39,7 @@
     "babel-preset-stage-3": "^6.5.0",
     "babel-register": "^6.5.2",
     "chai": "^3.5.0",
-    "chai-as-promised": "^5.2.0",
+    "chai-as-promised": "^6.0.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
